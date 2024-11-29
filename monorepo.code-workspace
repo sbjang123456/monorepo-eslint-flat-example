@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": "."
+    },
+    {
+      "name": "pnpm-package-config",
+      "path": "pnpm/package-config"
+    },
+    {
+      "name": "pnpm-root-config",
+      "path": "pnpm/root-config"
+    },
+    {
+      "name": "yarn-berry-package-config",
+      "path": "yarn-berry/package-config"
+    },
+    {
+      "name": "yarn-berry-root-config",
+      "path": "yarn-berry/root-config"
+    }
+  ]
+}
