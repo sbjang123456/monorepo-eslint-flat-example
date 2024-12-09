@@ -4,22 +4,53 @@
   "type": "module",
   "private": true,
   "exports": {
-    "./base": "./base.js",
-    "./next-js": "./next.js",
-    "./react-internal": "./react-internal.js"
+    ".": "./src/index.js",
+    "./base": "./src/config/base.js",
+    "./nextjs": "./src/config/nextjs.js",
+    "./react": "./src/config/react.js",
+    "./turbo": "./src/config/turbo.js",
+    "./prettier": "./src/config/prettier-config.js",
+    "./import": "./src/config/import.js",
+    "./jest": "./src/config/jest.js",
+    "./mdx": "./src/config/mdx.js",
+    "./playwright": "./src/config/playwright.js",
+    "./react-query": "./src/config/react-query.js",
+    "./react-testing-library": "./src/config/react-testing-library.js",
+    "./storybook": "./src/config/storybook.js",
+    "./tailwind": "./src/config/tailwind.js",
+    "./vitest": "./src/config/vitest.js"
   },
   "devDependencies": {
+    "@eslint/js": "^9.15.0",
     "@next/eslint-plugin-next": "^15",
-    "@typescript-eslint/eslint-plugin": "^8.15.0",
-    "@typescript-eslint/parser": "^8.15.0",
+    "@tanstack/eslint-plugin-query": "^5.61.6",
+    "@vitest/eslint-plugin": "^1.1.12",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-css-import-order": "^1.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jest": "^28.9.0",
+    "eslint-plugin-mdx": "^3.1.5",
     "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-playwright": "^2.1.0",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-storybook": "^0.11.1",
+    "eslint-plugin-tailwindcss": "^3.17.5",
+    "eslint-plugin-testing-library": "^7.0.0",
     "eslint-plugin-turbo": "^2.3.0",
     "globals": "^15.12.0",
+    "tailwind": "^4.0.0",
     "typescript": "^5.3.3",
     "typescript-eslint": "^8.15.0"
+  },
+  "peerDependencies": {
+    "tailwind": "*"
+  },
+  "peerDependenciesMeta": {
+    "tailwindcss": {
+      "optional": true
+    }
   }
 }
